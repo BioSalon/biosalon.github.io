@@ -18,7 +18,7 @@
 
 <body>
     <!-- Header -->
-    <audio controls autoplay id="background-music" src="assets/index.mp3" type="audio/mpeg" style="display: none;"> Your browser does not support the audio element.</audio>
+    <audio controls id="background-music" src="assets/index.mp3" type="audio/mpeg" style="display: none;"> Your browser does not support the audio element.</audio>
     <section id="header">
         <div class="inner">
             <span class="icon major fa-cloud"></span>
@@ -275,11 +275,11 @@
                     <br>我、適合哪一種？</p>
             </div>
             <div class="12u 12u$(medium)">
-            	<br>
-            	<br>
-            	<br>
-            	<br>
-            	<br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
                 <ul class="actions uniform">
                     <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfKvO954UkLw26ZUBXaUvV6kvePM_NIqIFmlYqtrfVOekm_GA/viewform" class="button special">「學長姐分享」志願選填表單<br></a></li>
                 </ul>
@@ -442,11 +442,15 @@
         </ul>
     </section>
     <!-- Scripts -->
+    <script type="text/javascript">
+    window.addEventListener('load', function() {
+        $("#background-music").trigger("play");
+    });
+    </script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
     <script src="assets/js/skel.min.js"></script>
     <script src="assets/js/util.js"></script>
-    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
     <script src="assets/js/main.js"></script>
 </body>
 
